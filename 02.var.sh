@@ -26,3 +26,5 @@ echo the expression = ${EXPR1}
 #######Local##########
 coursename=Devops
 echo course name = $coursename
+
+echo trainingcenter = $trainingcenter
