@@ -15,3 +15,10 @@ date=$(date +%F)
 
 echo this is today date = $date
 echo today date = ${date}
+
+###Arthmetic substitution
+
+EXPR1=$((2+3-5*8/6*3))
+
+echo the expresssion = $EXPR1
+echo the expression = ${EXPR1}
