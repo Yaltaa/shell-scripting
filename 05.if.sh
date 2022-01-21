@@ -1,7 +1,7 @@
 #!/bin/bash
 ######string expression
-a=200
-if [ $a = "200" ]
+a=abc
+if [ $a = "abc" ]
 than
 echo ok
 fi
