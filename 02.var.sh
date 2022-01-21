@@ -11,7 +11,7 @@ echo this is my housenumber = $housenumber
 echo this is my beautiful housenumber =${housenumber}
 
 ## command subtitution
-date=date +%F
+date=$(date +%F)
 
 echo this is today date = $date
 echo today date = ${date}
