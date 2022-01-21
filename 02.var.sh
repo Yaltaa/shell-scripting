@@ -10,5 +10,5 @@ echo student_status = $student_status
 echo student_status = ${student_status}
 
 date=2022-01-21
-echo date = $date
+echo to day is monday date = $date
 echo date =${date}
