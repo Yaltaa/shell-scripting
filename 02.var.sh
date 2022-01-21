@@ -8,3 +8,7 @@ student_status='present'
 
 echo student_status = $student_status
 echo student_status = ${student_status}
+
+date=2022-01-21
+echo date = $date
+echo date =${date}
