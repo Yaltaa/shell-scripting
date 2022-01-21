@@ -6,9 +6,6 @@ echo student_name = ${student_name}
 
 student_status='present'
 
-echo student_status = $student_status
-echo student_status = ${student_status}
-
-date=2022-01-21
-echo to day is monday date = $date
-echo date =${date}
+housenumber=255/5
+echo this is my housenumber = $housenumber
+echo this is my beautiful housenumber =${housenumber}
