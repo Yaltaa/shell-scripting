@@ -67,6 +67,5 @@ echo "copy catalogue content"
 cp -r catalogue-main /home/roboshop/catalogue &>>$LOG_FILE
 
 echo "install nodejs dependencies"
-cd /home/roboshop/catalogue
 npm install &>>$LOG_FILE
 
