@@ -49,7 +49,7 @@ source components/common.sh
 echo "download mangodb repo file"
 curl -s -o /etc/yum.repos.d/mongodb.repo https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo &>>$LOG_FILE
 
-echo "install mongodb"
+echo "instalment mongodb"
 yum install -y mongodb-org &>>$LOG_FILE
 
 
