@@ -64,7 +64,8 @@ echo "clean old catalogue"
 rm -rf /home/roboshop/catalogue
 
 echo "copy catalogue content"
-cp -r catalogue-main /home/roboshop/catalogue &>>$LOG_FILE
+cd /home/roboshop/catalogue
+mv catalogue-main catalogue
 
 echo "install nodejs dependencies"
 cd /home/roboshop/catalogue
