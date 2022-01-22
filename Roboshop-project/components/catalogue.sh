@@ -60,6 +60,9 @@ echo "extract the catalogue code"
 cd /tmp/
 unzip -o /catalogue.zip &>>$LOG_FILE
 
+echo "clean old catalogue"
+rm -rf /home/roboshop/catalogue
+
 echo "copy catalogue content"
 cp -r catalogue-main /home/roboshop/catalogue &>>$LOG_FILE
 
