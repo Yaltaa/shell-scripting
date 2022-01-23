@@ -74,5 +74,7 @@ echo "install nodejs dependencies"
 cd /home/roboshop/catalogue
 npm install &>>$LOG_FILE
 
+chown roboshop:roboshop /home/roboshop/ -R
+
 
 
