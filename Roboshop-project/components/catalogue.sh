@@ -47,4 +47,4 @@
 #
 ##```
 
-echo "catalogue server"
+echo "catalogue server installation"
