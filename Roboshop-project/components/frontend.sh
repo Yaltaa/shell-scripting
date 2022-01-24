@@ -35,8 +35,22 @@
 ## systemctl restart nginx
 #
 #```
+
+LOG_FILE=/tmp/roboshop.log
+
 echo "install frontend"
-yum install nginx -y >>/tmp/roboshop.log
+yum install nginx -y &>>$LOG_FILE
 
 echo "downlod the frontend content"
-curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"  >>/tmp/roboshop.log
+curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"  &>>$LOG_FILE
+
+echo "clean old content"
+rm -rf /usr/share/nginx/html/* &>>$LOG_FILE
+
+echo " extract front end content"
+cd /usr/share/nginx/htm/ &>>$LOG_FILE
+unzip /tmp/frontend.zip &>>$LOG_FILE
+
+
+
+
