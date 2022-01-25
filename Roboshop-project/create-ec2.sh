@@ -2,6 +2,7 @@
 INSTANCE_NAME$1
 if [ -z "${INSTANCE_NAME}" ]; then
   echo -e "\e[33mInstance Name Argument is need\e[0m"
+  exit
 fi
 AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=Centos-7-DevOps-Practice" --query 'Images[*].[ImageId]' --output text
 )
