@@ -12,4 +12,4 @@ else
   echo -e "\e[1;32mAMI_ID = ${AMI_ID}\e[0m"
 fi
 
-aws ec2 run-instances --image-id ${AMI_ID} --instance-type t3.micro --output text
+aws ec2 run-instances --image-id ${AMI_ID} --instance-type t3.micro --output text --tag-specifications "ResourceType=instance,Tags=[{Key=name,Value=${INSTANCE_NAME}}]"
